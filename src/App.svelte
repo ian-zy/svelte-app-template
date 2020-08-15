@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Component from "./Component.svelte";
 	let message:string = 'Learn Svelte with Typescript';
 </script>
 
@@ -53,5 +54,6 @@
 		>
 			{message}
 		</a>
+		<Component />
 	</header>
 </div>

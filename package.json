@@ -14,10 +14,14 @@
     "@testing-library/svelte": "^3.0.0",
     "@tsconfig/svelte": "^1.0.3",
     "@types/jest": "^26.0.4",
+    "autoprefixer": "^9.8.6",
     "jest": "^26.2.2",
+    "postcss": "^7.0.32",
+    "postcss-load-config": "^2.1.0",
     "snowpack": "^2.7.7",
     "svelte-check": "^0.1.59",
     "svelte-preprocess": "^4.0.8",
+    "tailwindcss": "^1.6.2",
     "typescript": "^3.9.7"
   }
 }
