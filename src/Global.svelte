@@ -1,8 +1,4 @@
-<script>
-  import '@colorfuldots/svelteit/dist/css/svelteit.min.css'
-</script>
-
-<style global>
+<style lang="postcss" global>
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
