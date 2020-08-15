@@ -1,11 +1,57 @@
 <script lang="ts">
-	import { Button } from '@colorfuldots/svelteit';
-
-	export let name: string;
+	let message:string = 'Learn Svelte with Typescript';
 </script>
 
-<main>
-	<h1 class="text-6xl text-center text-red-500">Hello {name}!</h1>
-	<p class="text-center text-2xl">Visit the <a class="text-blue-400 underline" href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<Button title="Hello Svelteit" primary rounded />
-</main>
+<style>
+	:global(body) {
+		margin: 0;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.App {
+		text-align: center;
+	}
+	.App-header {
+		background-color: #F9F6F6;
+		color: #333;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: calc(10px + 2vmin);
+	}
+	.App-link {
+		color: #ff3e00;
+	}
+	.App-logo {
+		height: 40vmin;
+		pointer-events: none;
+		margin-bottom: 1.0rem;
+		animation: App-logo-spin infinite 1.6s ease-in-out alternate;
+	}
+	@keyframes App-logo-spin {
+		from {
+			transform: scale(1);
+		}
+		to {
+			transform: scale(1.06);
+		}
+	}
+</style>
+
+<div class="App">
+	<header class="App-header">
+		<img src="/logo.svg" class="App-logo" alt="logo" />
+		<p>
+			Edit <code>src/App.svelte</code> and save to reload.
+		</p>
+		<a
+			class="App-link"
+			href="https://svelte.dev"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			{message}
+		</a>
+	</header>
+</div>
