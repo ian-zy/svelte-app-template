@@ -1,11 +1,10 @@
 {
+  "extends": "@snowpack/app-scripts-svelte",
   "mount": {
     "public": "/",
     "src": "/_dist_"
   },
   "plugins": [
-    ["./my-svelte-plugin.js"],
-    "@snowpack/plugin-dotenv",
     [
       "@snowpack/plugin-run-script",
       {
