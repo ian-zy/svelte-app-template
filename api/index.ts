@@ -1,5 +1,7 @@
 import type { NowRequest, NowResponse } from '@vercel/node'
+import { app } from '../server'
 
-export default (req: NowRequest, res: NowResponse) => {
-  res.json({ name: 'John', email: 'john@example.com', other: req.url })
+export default async (request: NowRequest, response: NowResponse) => {
+  await app.ready()
+  app.server.emit('request', request, response)
 }
