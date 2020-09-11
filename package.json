@@ -17,7 +17,7 @@
     "@snowpack/app-scripts-svelte": "^1.8.3",
     "@snowpack/plugin-run-script": "^2.0.4",
     "@snowpack/plugin-webpack": "^2.0.5",
-    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/svelte": "^3.0.0",
     "@tsconfig/svelte": "^1.0.3",
     "@types/jest": "^26.0.4",
@@ -29,8 +29,10 @@
     "sirv-cli": "^1.0.6",
     "snowpack": "^2.7.7",
     "svelte-check": "^0.1.59",
+    "svelte-jester": "^1.1.5",
     "svelte-preprocess": "^4.0.8",
     "tailwindcss": "^1.6.2",
+    "ts-jest": "^26.3.0",
     "vercel": "^20.0.0"
   }
 }
